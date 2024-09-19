@@ -112,16 +112,17 @@ return <div>
             <li><Link className="dropdown-item" href="/Videos">Media</Link></li>
           </ul>
         </li>
-        {/* <li className="nav-item">
-          <Link className="nav-link active h6 ms-3" aria-current="page" href="#">
-            Prayers Timings
+        <li className="nav-item">
+          <Link className="nav-link active h6 ms-3" aria-current="page" href="/Review">
+            Review
+          
           </Link>
         </li>
-        <li className="nav-item">
+        {/* <li className="nav-item">
           <Link className="nav-link active h6 ms-3" aria-current="page" href="/Software">
             Software
           </Link>
-        </li> */}
+        </li>  */}
         <li className="nav-item">
           <Link className="nav-link active h6 ms-3" aria-current="page" href="/Contect">
             Contact Us

@@ -1,0 +1,11 @@
+.card-img-container {
+    height: 200px; /* Set the desired height for the images */
+    overflow: hidden; /* Hide overflow if the image is larger than the container */
+  }
+  
+  .card-img-top {
+    width: 100%; /* Make sure the image covers the container width */
+    height: 100%; /* Ensure the image covers the container height */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+  }
+  

@@ -1,0 +1,143 @@
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+.slider-container:hover .prev-button,
+.slider-container:hover .next-button {
+  opacity: 1;
+}
+
+
+
+.circle {
+  width: 70px;
+  height: 70px;
+  border: 2px solid #629cb2;
+  border-radius: 50%;
+  background-color: transparent;
+}
+#icon2{
+  font-size: 35px;
+  color: #629cb2;
+}
+#cir{
+  background: #629cb2;
+  border-radius: 121px;
+  height: 30px;
+  width: 30px;
+}
+
+.swiper-container {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.swiper-pagination-bullet {
+  background: #000;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000;
+}
+
+#btn{
+  border-radius: 23px;
+  width: 44px;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.image-overlay {
+  position: relative;
+}
+
+.image-overlay img {
+  width: 100%;
+  height: auto;
+}
+
+.overlay-text {
+  position: absolute;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  /* border-radius: 5px; */
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  width: 100%;
+  align-self: center;
+}
+
+.image-overlay:hover .overlay-text {
+  opacity: 1;
+}
+
+.smal{
+  font-size: .78em;
+}
+
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  padding-left: 0; /* Ensure no extra padding is added */
+}
+
+.logo-img {
+  max-width: 100%;
+  height: auto;
+  width: 120px; /* Adjust width as needed */
+  display: block; /* Ensures the image does not have extra space around it */
+}
+
+/* Adjust the logo size for smaller screens */
+@media (max-width: 768px) {
+  .logo-img {
+    width: 100px; /* Adjust for smaller screens */
+  }
+}

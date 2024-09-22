@@ -44,7 +44,7 @@ return <div>
     </button>
     <div className="collapse navbar-collapse" id="navbarNav">
       <ul className="navbar-nav ms-lg-5 ps-lg-5">
-        <li className="nav-item">
+        <li className="nav-item ms-3 ">
           <Link className="nav-link active h6" aria-current="page" href="/">
             Home
           </Link>

@@ -6,6 +6,9 @@ export default function Footer(){
 
   const clientEmail = "dangerchamp2@gmail.com";
 
+  const clientEmail2 = "bilalqari453@gmail.com";
+  const clientPhoneNumber = "+923037476832";
+
 
 return <div>
 
@@ -50,6 +53,26 @@ return <div>
           <i className="fas fa-phone pt-1 me-3 text-white"></i>
           <p className="text-white mb-0">Phone: +923037476832</p>
         </div>
+        <div className='d-md-flex justify-content-center mt-3' >
+    <a  href='https://wa.me/923037476832' target='_blank'  >  <img style={{width:"36px",cursor:"pointer"}} src='/png-clipart-whatsapp-whatsapp-removebg-preview.png' ></img></a>
+ <a  href={`mailto:${clientEmail2}`} className="email-link ms-2 ">
+        <img
+          src="/281769-removebg-preview.png" // Replace with the path to your email icon
+          alt="Email Client"
+          className="email-icon"
+          style={{ cursor: "pointer", width: "35px"}}
+        />
+      </a>
+
+      <a  href={`sms:${clientPhoneNumber}`} className="sms-link ms-2 ">
+        <img
+          src="https://f-droid.org/repo/click.dummer.imagesms/en-US/icon_vEx24haDnhl_xAMJBvGiLHjyBiMdo9OAFxReEjGTsZI=.png" // Replace with the path to your SMS icon
+          alt="Text Message"
+          className="sms-icon"
+          style={{ cursor: "pointer", width: "40px", height: "40px" }}
+        />
+      </a>
+    </div>
       </div>
 
       {/* Mobile Apps */}

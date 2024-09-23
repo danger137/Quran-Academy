@@ -8,6 +8,12 @@ import SubscriptionForm from '../components/checkout/CheckoutForm';
 
 export default function Contact(){
 
+  useEffect(()=>{
+
+    document.title = "Contact US";
+ 
+ },[])
+
 
   const clientEmail = "bilalqari453@gmail.com";
   const clientPhoneNumber = "+923037476832";

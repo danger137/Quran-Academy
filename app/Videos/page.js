@@ -1,8 +1,17 @@
 
-
+"use client";
+import { useEffect } from "react";
 
 
 export default function Videos(){
+
+
+  
+  useEffect(()=>{
+
+    document.title = "Media";
+ 
+ },[])
 
 
 

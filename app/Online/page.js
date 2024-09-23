@@ -10,7 +10,11 @@ import Link from "next/link";
 
 export default function Online(){
 
+  useEffect(()=>{
 
+    document.title = "Madras Tul Madina Online";
+ 
+ },[])
 
   const scriptURL = 'https://script.google.com/macros/s/AKfycbzG26b-cXqYUG_Lag-jVaYV2OSZMWrVTIP_43xz8yiN07OKxWA515UiuLDhtyg9dQ90/exec';
   const formRef = useRef(null);

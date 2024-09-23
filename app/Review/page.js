@@ -1,9 +1,14 @@
+"use client";
+import { useEffect } from "react";
+
 import "./Review.css";
-
-
 export default function  Review(){
 
+  useEffect(()=>{
 
+    document.title = "Review";
+ 
+ },[])
 
 
 return <div>

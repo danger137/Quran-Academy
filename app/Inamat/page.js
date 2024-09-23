@@ -1,7 +1,16 @@
-
+"use client";
+import { useEffect } from "react";
 
 
 export default function Inamat(){
+
+
+  useEffect(()=>{
+
+    document.title = "Madani Inamat Activity";
+ 
+ },[])
+
 
 
 

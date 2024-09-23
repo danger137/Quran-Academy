@@ -1,6 +1,13 @@
-
+"use client";
+import { useEffect } from "react";
 
 export default function Child(){
+
+  useEffect(()=>{
+
+    document.title = "Children Section";
+ 
+ },[])
 
 
 

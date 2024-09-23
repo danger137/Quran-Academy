@@ -1,7 +1,12 @@
-
+"use client";
+import { useEffect } from "react";
 export default function Pillars(){
 
+  useEffect(()=>{
 
+    document.title = "Pillars Of Islam";
+ 
+ },[])
 
     return <div>
     

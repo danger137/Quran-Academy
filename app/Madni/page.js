@@ -1,9 +1,14 @@
-
+"use client";
+import { useEffect } from "react";
 
 
 export default function Madni(){
 
+  useEffect(()=>{
 
+    document.title = "Madani Qafila Activity Details";
+ 
+ },[])
 
 
 return <div>

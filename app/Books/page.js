@@ -1,10 +1,15 @@
-
+"use client";
+import { useEffect } from "react";
 './book.css';
 
 
 export default function Books(){
 
+  useEffect(()=>{
 
+    document.title = "Books";
+ 
+ },[])
 
 return <div>
 

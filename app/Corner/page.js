@@ -1,5 +1,16 @@
-
+"use client";
+import { useEffect } from "react";
 export default function Cancel() {
+
+
+
+  useEffect(()=>{
+
+    document.title = "New Muslim Corner";
+ 
+ },[])
+
+
   return <div>
         <div className="d-md-flex" >
         <img style={{width:"100%"}} src="https://www.dawateislamiusa.com/wp-content/uploads/2022/02/inside_background-1-1536x681.jpg" ></img>

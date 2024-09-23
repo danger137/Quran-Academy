@@ -1,11 +1,16 @@
-
+"use client";
+import { useEffect } from "react";
 import "./Intro.css";
 
 
 
 export default function Intro(){
 
+  useEffect(()=>{
 
+    document.title = "Introduction";
+ 
+ },[])
 
 
 

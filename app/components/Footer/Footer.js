@@ -63,7 +63,7 @@ return <div>
             <a href="tel:++92447570552" className="text-reset text-white">+92447570552</a>
           </li>
           <li style={{ color: "white" }}>
-            <a href='https://wa.me/92447570552' target='_blank'>
+            <a href='https://wa.me/+923447570552' target='_blank'>
               <img className="mt-3" style={{ width: "35px", cursor: "pointer" }} src='/png-clipart-whatsapp-whatsapp-removebg-preview.png' alt="WhatsApp" />
             </a>
             <a href={`mailto:${clientEmail}`} className="ms-2">

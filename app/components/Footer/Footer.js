@@ -74,6 +74,13 @@ return <div>
                 style={{ cursor: "pointer", width: "35px" }}
               />
             </a>
+            <a className="ms-2" href="https://www.facebook.com/danger.champ.54" target="_blank">
+  <img className="mt-3" style={{ cursor: "pointer", width: "35px" }} src="/download-removebg-preview.png" alt="Facebook"/>
+</a>
+<a className="ms-2" href="https://www.instagram.com/mr_gaming_plays_yt" target="_blank">
+  <img className="mt-3  " style={{ cursor: "pointer", width: "30px" }} src="/ff5ae72f423c7a1a2e6daf347ff1b5e2-removebg-preview.png" alt="Instagram"/>
+</a>
+
           </li>
         </ul>
       </div>

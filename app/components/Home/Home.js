@@ -4,7 +4,106 @@ import { motion, useAnimation } from 'framer-motion';
 import Link from "next/link";
 import { useEffect, useState } from 'react';
 
+
+
 export default function Home(){
+
+  const styles = {
+    container: {
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      padding: '30px',
+      maxWidth: '400px',
+      margin: '0 auto',
+      backgroundColor: '#f3f4f6',
+      borderRadius: '8px',
+      boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.1)',
+      fontFamily: 'Arial, sans-serif',
+    },
+    heading: {
+      color: '#4a4e69',
+      fontSize: '24px',
+      marginBottom: '20px',
+    },
+    input: {
+      width: '100%',
+      padding: '12px',
+      marginBottom: '15px',
+      fontSize: '16px',
+      borderRadius: '4px',
+      border: '1px solid #d1d5db',
+      outline: 'none',
+      boxShadow: 'inset 0 1px 3px rgba(0, 0, 0, 0.1)',
+    },
+    label: {
+      alignSelf: 'flex-start',
+      color: '#374151',
+      fontWeight: '500',
+      marginBottom: '5px',
+    },
+    select: {
+      width: '100%',
+      padding: '10px',
+      marginBottom: '20px',
+      fontSize: '16px',
+      borderRadius: '4px',
+      border: '1px solid #d1d5db',
+      outline: 'none',
+    },
+    button: {
+      width: '100%',
+      padding: '12px',
+      fontSize: '16px',
+      color: '#fff',
+      backgroundColor: '#4a4e69',
+      border: 'none',
+      borderRadius: '4px',
+      cursor: 'pointer',
+      transition: 'background-color 0.3s ease',
+    },
+    resultHeading: {
+      color: '#374151',
+      marginTop: '20px',
+      fontSize: '18px',
+      fontWeight: '500',
+    },
+    resultContainer: {
+      width: '100%',
+      padding: '12px',
+      backgroundColor: '#e5e7eb',
+      borderRadius: '4px',
+      marginTop: '10px',
+    },
+    resultText: {
+      color: '#1f2937',
+      fontSize: '16px',
+      whiteSpace: 'pre-wrap',
+    }
+  };
+  
+
+  const [inputText, setInputText] = useState('');
+  const [translatedText, setTranslatedText] = useState('');
+  const [targetLang, setTargetLang] = useState('es'); // Default target language is Spanish
+
+  const handleTranslate = async () => {
+    if (!inputText) {
+      setTranslatedText("Please enter text to translate.");
+      return;
+    }
+
+    try {
+      const response = await fetch(
+        `https://api.mymemory.translated.net/get?q=${encodeURIComponent(inputText)}&langpair=en|${targetLang}`
+      );
+      const data = await response.json();
+      setTranslatedText(data.responseData.translatedText);
+    } catch (error) {
+      setTranslatedText("Error: Could not translate text.");
+      console.error("Translation Error:", error);
+    }
+  };
 
   const images = [
     "/images.jpg",
@@ -133,6 +232,68 @@ return <div>
   </p>
 </div>
 
+<div className="d-flex flex-column flex-md-row mt-5 justify-content-center align-items-center text-center" >
+<div style={styles.container}>
+      <h2 style={styles.heading}>🌐 Real-Time Translator</h2>
+      <input
+        type="text"
+        placeholder="Enter text to translate..."
+        value={inputText}
+        onChange={(e) => setInputText(e.target.value)}
+        style={styles.input}
+      />
+      
+      <label htmlFor="languageSelect" style={styles.label}>Select Language:</label>
+      <select
+        id="languageSelect"
+        value={targetLang}
+        onChange={(e) => setTargetLang(e.target.value)}
+        style={styles.select}
+      >
+        <option value="af">Afrikaans</option>
+        <option value="ar">Arabic</option>
+        <option value="bn">Bengali</option>
+        <option value="zh">Chinese (Simplified)</option>
+        <option value="nl">Dutch</option>
+        <option value="en">English</option>
+        <option value="fr">French</option>
+        <option value="de">German</option>
+        <option value="el">Greek</option>
+        <option value="hi">Hindi</option>
+        <option value="it">Italian</option>
+        <option value="ja">Japanese</option>
+        <option value="ko">Korean</option>
+        <option value="ms">Malay</option>
+        <option value="fa">Persian</option>
+        <option value="pl">Polish</option>
+        <option value="pt">Portuguese</option>
+        <option value="pa">Punjabi</option>
+        <option value="ro">Romanian</option>
+        <option value="ru">Russian</option>
+        <option value="es">Spanish</option>
+        <option value="sw">Swahili</option>
+        <option value="sv">Swedish</option>
+        <option value="ta">Tamil</option>
+        <option value="th">Thai</option>
+        <option value="tr">Turkish</option>
+        <option value="ur">Urdu</option>
+        <option value="vi">Vietnamese</option>
+        <option value="zu">Zulu</option>
+        {/* Add more languages as needed */}
+      </select>
+
+      <button onClick={handleTranslate} style={styles.button}>
+        Translate
+      </button>
+
+      <h3 style={styles.resultHeading}>Translated Text:</h3>
+      <div style={styles.resultContainer}>
+        <p style={styles.resultText}>{translatedText}</p>
+      </div>
+    </div>
+  
+ 
+</div>
 
 
 

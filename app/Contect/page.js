@@ -7,6 +7,27 @@ import { Elements, CardElement, useStripe, useElements } from '@stripe/react-str
 import SubscriptionForm from '../components/checkout/CheckoutForm';
 
 export default function Contact(){
+  const [visitorCount, setVisitorCount] = useState(0);
+
+  // Load count from localStorage on initial render
+  useEffect(() => {
+    const savedCount = localStorage.getItem("visitorCount");
+    if (savedCount) {
+      setVisitorCount(Number(savedCount));
+    }
+  }, []);
+
+  // Increment count and save it to localStorage
+  const incrementCount = () => {
+    const newCount = visitorCount + 1;
+    setVisitorCount(newCount);
+    localStorage.setItem("visitorCount", newCount); // Save to local storage
+  };
+
+  // Call incrementCount when the component mounts
+  useEffect(() => {
+    incrementCount();
+  }, []);
 
   useEffect(()=>{
 
@@ -198,6 +219,10 @@ return <div>
         loading="lazy"
         title="Map"
       ></iframe>
+    </div>
+    <div style={{ textAlign: "center", marginTop: "20px" }}>
+      <h1>Welcome to the site!</h1>
+      <p>Visitor Count: {visitorCount}</p>
     </div>
   </div>
 </div>

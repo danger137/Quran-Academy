@@ -106,9 +106,37 @@ return <div>
     Read More
   </button>
 </div>
+<div className="d-flex flex-column flex-md-row mt-5 justify-content-center align-items-center text-center">
+  <h4 style={{ color: "#629cb2", margin: "0" }}>Important Announcement</h4>
+</div>
+
+<div className="text-center mt-3 pt-2">
+  <p className="px-3" style={{ lineHeight: "1.6" }}>
+  السلام علیکم!
+
+"قرآن تعلیم" ایک اسلامی تعلیمی کورس ہے جس کا مقصد قرآن پاک کی تلاوت، ترجمہ اور تشریح کی تعلیم دینا ہے۔ اس کورس میں طلباء کو قرآن مجید کی تلاوت کے اصول (تجوید)، آیات کا مفہوم سمجھنے اور ان کی روزمرہ زندگی میں تطبیق کے طریقے سکھائے جاتے ہیں۔ قرآن تعلیم کا بنیادی مقصد یہ ہے کہ مسلمانوں کو قرآن کے پیغام کو صحیح انداز میں پڑھنے، سمجھنے اور اس پر عمل کرنے کی تربیت فراہم کی جائے، چاہے وہ دنیا کے کسی بھی حصے میں ہوں۔
+
+اوورسیز (بیرون ملک مقیم) مسلمان بھائیوں اور بہنوں سے خصوصی درخواست ہے کہ وہ زکوٰۃ اور دیگر اسلامی عطیات کے ذریعے اس نیک مقصد کی حمایت کریں، تاکہ ہم قرآن کی تعلیمات کو زیادہ سے زیادہ افراد تک پہنچا سکیں۔ آپ کے عطیات ہماری تعلیمی سرگرمیوں کو جاری رکھنے میں نہایت مددگار ثابت ہوں گے۔
+
+بیرون ملک سے قرآن کی تعلیمات سیکھنے یا عطیات دینے کے متعلق مزید معلومات کے لیے، یا کسی قسم کے سوالات کے لیے آپ براہِ کرم مولانا صاحب سے رابطہ کریں:
+
+مولانا صاحب سے رابطہ: +923037476832 (واٹس ایپ کے ذریعے بھی دستیاب)
+
+والسلام!
 
 
-<div className="d-flex flex-column flex-md-row mt-3 justify-content-center align-items-center text-center">
+
+
+
+
+
+  </p>
+</div>
+
+
+
+
+<div className="d-flex flex-column flex-md-row mt-5 justify-content-center align-items-center text-center">
   <hr
     style={{
       border: "1px solid #000",
@@ -136,56 +164,60 @@ return <div>
 <div className="d-flex flex-column flex-md-row justify-content-center gap-5 mt-4">
   <div className="text-center">
     <img
-      src="https://www.dawateislamiusa.com/wp-content/uploads/2022/02/Istahkhara.jpg"
+      src="https://www.quranteacher.net/public_html/course_images/tafseer_course.jpeg"
       className="img-fluid"
       alt="Istikhara"
     />
     <div className="d-flex justify-content-center">
-      <button
-        style={{ background: "#629cb2", color: "white" }}
+      <a
+        href="/Online" // Update with the actual link
+        style={{ background: "#629cb2", color: "white", textDecoration: "none", borderRadius: "4px" }}
         className="btn btn-sm px-4 py-2 border-0 mt-3"
       >
-        Istikhara
-      </button>
+        All Quran Course
+      </a>
     </div>
   </div>
 
   <div className="text-center">
     <img
-      src="https://www.dawateislamiusa.com/wp-content/uploads/2022/02/Ruhani-Ilaj.jpg"
+      src="https://www.quranteacher.net/public_html/course_images/42tasawwuff-course.jpg"
       className="img-fluid"
       alt="Ruhani Ilaj"
     />
     <div className="d-flex justify-content-center">
-      <button
-        style={{ background: "#629cb2", color: "white" }}
+      <a
+        href="/Online" // Update with the actual link
+        style={{ background: "#629cb2", color: "white", textDecoration: "none", borderRadius: "4px" }}
         className="btn btn-sm px-4 py-2 border-0 mt-3"
       >
-        Roohani Ilaj
-      </button>
+        Hafza Quran
+      </a>
     </div>
   </div>
 
   <div className="text-center">
     <img
-      src="https://www.dawateislamiusa.com/wp-content/uploads/2022/02/Istahkhara-1.jpg"
+      src="https://www.quranteacher.net/public_html/course_images/Fiqh.jpeg"
       className="img-fluid"
       alt="Kaat"
     />
     <div className="d-flex justify-content-center">
-      <button
-        style={{ background: "#629cb2", color: "white" }}
+      <a
+        href="/Online" // Update with the actual link
+        style={{ background: "#629cb2", color: "white", textDecoration: "none", borderRadius: "4px" }}
         className="btn btn-sm px-4 py-2 border-0 mt-3"
       >
-        Kaat
-      </button>
+        Quran with Tafseer
+      </a>
     </div>
   </div>
 </div>
 
 
 
-<div className="d-flex flex-column flex-md-row mt-3 justify-content-center gap-5 mt-5 text-center">
+
+<div className="d-flex flex-column flex-md-row mt-5 justify-content-center gap-5 mt-5 text-center">
   <div>
     <div className="circle d-flex justify-content-center align-items-center mx-auto">
       <i id="icon2" className="fa-solid fa-shield-halved"></i>

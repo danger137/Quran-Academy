@@ -63,6 +63,22 @@ return <div>
           style={{ cursor: "pointer", width: "35px"}}
         />
       </a>
+ <a  href={`https://web.facebook.com/profile.php?id=100053591693038&rdid=0XpAIeAUhYjv99Xj&share_url=https%3A%2F%2Fweb.facebook.com%2Fshare%2FfJFuMhKDiWDXErFr%2F%3F_rdc%3D1%26_rdr`} className="email-link ms-2 ">
+        <img
+          src="/download-removebg-preview.png"  // Replace with the path to your email icon
+         alt="Facebook"
+          className="email-icon"
+          style={{ cursor: "pointer", width: "35px"}}
+        />
+      </a>
+ <a  href={`https://www.instagram.com/qari5355/`} className="email-link ms-2 ">
+        <img
+          src="/ff5ae72f423c7a1a2e6daf347ff1b5e2-removebg-preview.png"  // Replace with the path to your email icon
+         alt="Facebook"
+          className="email-icon"
+          style={{ cursor: "pointer", width: "35px"}}
+        />
+      </a>
 
       <a  href={`sms:${clientPhoneNumber}`} className="sms-link ms-2 ">
         <img
@@ -72,6 +88,7 @@ return <div>
           style={{ cursor: "pointer", width: "40px", height: "40px" }}
         />
       </a>
+
     </div>
       </div>
 

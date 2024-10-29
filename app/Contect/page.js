@@ -5,9 +5,8 @@ import "./Contact.css";
 import { loadStripe } from '@stripe/stripe-js';
 import { Elements, CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
 import SubscriptionForm from '../components/checkout/CheckoutForm';
-import useVisitorCount from '../useVisitorCount';
 export default function Contact(){
-  const visitorCount = useVisitorCount();
+
 
   useEffect(()=>{
 
@@ -200,10 +199,7 @@ return <div>
         title="Map"
       ></iframe>
     </div>
-    <div>
-      <h1>Welcome to My Site!</h1>
-      <p>Total Visitors: {visitorCount}</p>
-    </div>
+  
   </div>
 </div>
 
